@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyTrip - Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+    <header>
+        <div class="top-header">
+            <img src="image/image_1.jpeg" alt="BookMyTrip Logo">
+
+            <div class="support">
+                <p>☎ Call 24/7 Support</p>
+                <p>+91 948463783</p>
+            </div>
+
+            <input type="search" placeholder="Search entire website">
+        </div>
+
+       
+        <nav>
+            <button id="menu-button" type="button">☰ Menu</button>
+
+            <ul id="nav-menu">
+
+                <!-- Hotels Dropdown -->
+                <li class="dropdown">
+                    <a href="#hotels" id="hotels-link"
+                       aria-expanded="false">Hotels ▾</a>
+
+                    <ul class="dropdown-menu" id="hotels-menu">
+                        <li><a href="#hotels">Hotels in India</a></li>
+                        <li><a href="#hotels">International Hotels</a></li>
+                        <li><a href="#hotels">Popular Hotels in Asia</a></li>
+                        <li><a href="#hotels">Popular Hotels in Europe</a></li>
+                        <li><a href="#deals">Hotel Deals of the Week</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#deals">Vacations</a></li>
+                <li><a href="#deals">Hot Deals</a></li>
+                <li><a href="#resources">Travel Guides</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button type="button">Sign Up</button>
+                <button type="button">My Account</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Discover Amazing Places</h2>
+            <p>Find your perfect hotel and enjoy your next holiday.</p>
+            <h3>Starting from ₹2,000 per night</h3>
+        </div>
+    </section>
+
+    <section class="booking">
+        <h3>Book Your Trip</h3>
+
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="destination">Where?</label>
+                <input type="text" id="destination"
+                       placeholder="Enter location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rooms">Rooms</label>
+                <select id="rooms">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="adults">Adults</label>
+                <select id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-button">
+                Search Hotels
+            </button>
+        </form>
+
+        <p id="message" role="status"></p>
+    </section>
+
+    <!-- Popular Hotels -->
+    <section class="section" id="hotels">
+        <h2>Popular Hotels</h2>
+
+        <div class="hotel-container">
+
+            <div class="hotel-card">
+                <img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80"
+                    alt="Luxury hotel">
+                <div class="hotel-info">
+                    <h3>Luxury Palace</h3>
+                    <p>Chennai, India</p>
+                    <span>₹2,000 / night</span>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img
+                    src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=700&q=80"
+                    alt="Resort with swimming pool">
+                <div class="hotel-info">
+                    <h3>Mont Blanc Resort</h3>
+                    <p>Zurich, Switzerland</p>
+                    <span>₹3,200 / night</span>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img
+                    src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=700&q=80"
+                    alt="Beautiful hotel">
+                <div class="hotel-info">
+                    <h3>Grand Marriott</h3>
+                    <p>Melbourne, Australia</p>
+                    <span>₹4,000 / night</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="flights">
+        <h2>Flight Booking</h2>
+        <div class="blog-box">
+            <p>Plan your next journey and explore your favourite destinations.</p>
+            <p>Flight booking is a design placeholder; no airline booking service is connected.</p>
+        </div>
+    </section>
+
+    <section class="section" id="deals">
+        <h2>Hot Deals</h2>
+
+        <div class="deals-container">
+
+            <div class="deal-card">
+                <img
+                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80"
+                    alt="Paris holiday">
+
+                <div class="deal-text">
+                    <h3>Paris Holiday</h3>
+                    <p>Enjoy your dream vacation.</p>
+                    <button type="button">Explore Deal</button>
+                </div>
+            </div>
+
+            <div class="deal-card">
+                <img
+                    src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80"
+                    alt="Island holiday">
+
+                <div class="deal-text">
+                    <h3>Island Escape</h3>
+                    <p>Relax beside beautiful beaches.</p>
+                    <button type="button">Explore Deal</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+    <section class="section resources" id="resources">
+        <h2>Travel Resources</h2>
+        <p>Find useful information for your next trip.</p>
+
+        <ul>
+            <li><a href="#hotels">Hotel Booking Guide</a></li>
+            <li><a href="#deals">Holiday Packages</a></li>
+            <li><a href="#blogs">Travel Tips</a></li>
+        </ul>
+    </section>
+
+  
+    <section class="section" id="blogs">
+        <h2>Latest Travel Blogs</h2>
+
+        <div class="blog-box">
+            <h3>Best Places to Visit in India</h3>
+            <p>
+                Discover beautiful destinations,
+                exciting adventures, and memorable holidays.
+            </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-container">
+
+            <div>
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Career</p>
+            </div>
+
+            <div>
+                <h3>Customer Support</h3>
+                <p>Contact Us</p>
+                <p>FAQ</p>
+                <p>Help Center</p>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram</p>
+                <p>YouTube | LinkedIn</p>
+            </div>
+
+            <div>
+                <h3>Get Travel Updates</h3>
+
+                <form id="subscribe-form">
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+
+                <p id="subscribe-message" role="status"></p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 BookMyTrip. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
